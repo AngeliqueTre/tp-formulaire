@@ -10,7 +10,7 @@
 
 <body>
   <header>
-    <h1>Bienvenue chez Tandem d'exception</h1>
+    <h1>Bienvenue chez Tandexception</h1>
     <h2>Formulaire d'inscription</h2>
   </header>
   <div class="intro">
@@ -22,13 +22,13 @@
       <fieldset class="part1">
         <legend>Indentité</legend>
         <p>
-          Genre :
+          <label for ="genre" required>Genre<sup>*</sup> :</label>
           <input type="radio" name="genre" value="man" id="man" class="radio" checked>
-          <label for="man">Homme</label>
+          <label for="man" class="labelRadio">Homme</label>
           <input type="radio" name="genre" value="woman" id="woman"class="radio">
-          <label for="woman">Femme</label>
+          <label for="woman" class="labelRadio">Femme</label>
           <input type="radio" name="genre" value="autre" id="autre" class="radio">
-          <label for="autre">Autre</label>
+          <label for="autre" class="labelRadio">Autre</label>
         </p>
         <p>
           <label for="firstname">Prénom<sup>*</sup> :</label>
@@ -54,6 +54,8 @@
             <option value="chemin">Chemin</option>
             <option value="impasse">Impasse</option>
             <option value="voix">Voix</option>
+          </select></br>
+            <label for="nomVoix">Nom de voix<sup>*</sup> :</label>
             <input type="text" name="nomVoix" id="nomVoix" placeholder="ex:Saint-Michel" required>
         </p>
         <p>
@@ -102,30 +104,30 @@
         <p>
           Quel est salaire annuel?</br>
           <input type="radio" name="salaire" value="moins15000€" id="moins15000€" checked class="radio">
-          <label for="moins15000€"> Moins de 15 000€</label>
+          <label for="moins15000€" class="labelRadio"> Moins de 15 000€</label>
           <input type="radio" name="salaire" value="15000_25000" id="15000_25000" class="radio">
-          <label for="15000_25000">Entre 15 000€ et 25 000€</label>
+          <label for="15000_25000" class="labelRadio">Entre 15 000€ et 25 000€</label>
           <input type="radio" name="salaire" value="plus25000" id="plus25000" class="radio">
-          <label for="plus25000">Plus de 25 000€</label>
+          <label for="plus25000" class="labelRadio">Plus de 25 000€</label>
         </p>
         <p>
           Quels sont vos centres d'intêret? <br>
           <input type="checkbox" name="actualite" id="actualite" class="check">
-          <label for="actualite">Actualité</label>
+          <label for="actualite" class="labelCheck">Actualité</label>
           <input type="checkbox" name="cinema" id="cinema" class="check">
-          <label for="cinema">Cinéma</label> <br>
+          <label for="cinema" class="labelCheck">Cinéma</label> <br>
           <input type="checkbox" name="info" id="info" class="check">
-          <label for="info">Information</label>
+          <label for="info" class="labelCheck">Information</label>
           <input type="checkbox" name="lecture" id="lecture" class="check">
-          <label for="lecture">Lecture</label> <br>
+          <label for="lecture" class="labelCheck">Lecture</label> <br>
           <input type="checkbox" name="sport" id="sport" checked class="check">
-          <label for="sport">Sport</label>
+          <label for="sport" class="labelCheck">Sport</label>
           <input type="checkbox" name="trip" id="trip" checked class="check">
-          <label for="trip">Voyage</label> <br>
+          <label for="trip" class="labelCheck">Voyage</label> <br>
         </p>
         <p>
-          <label for="message">Quels sont les raisons de votre inscription? </label><br>
-          <textarea name="message" rows="8" cols="30"></textarea>
+          <label for="message" class="last">Quels sont les raisons de votre inscription? </label><br>
+          <textarea name="message" rows="8" cols="80"></textarea>
         </p>
       </fieldset>
     </div>
